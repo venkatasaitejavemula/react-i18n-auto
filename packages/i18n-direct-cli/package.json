@@ -1,0 +1,30 @@
+{
+  "name": "i18n-direct-cli",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "i18n-direct": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig.json",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "acorn": "^8.12.1",
+    "acorn-walk": "^8.3.2",
+    "dotenv": "^16.4.5",
+    "fast-glob": "^3.3.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.5.4"
+  }
+}

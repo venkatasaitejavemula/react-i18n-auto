@@ -1,0 +1,29 @@
+{
+  "name": "example-react-app",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "generate-translations": "i18n-direct"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "i18n-direct-react": "*"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2",
+    "@vitejs/plugin-react": "^4.3.1",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.5.4"
+  },
+  "i18nDirect": {
+    "languages": ["en", "fr", "de"],
+    "defaultLanguage": "en",
+    "outputDir": "src/translations"
+  }
+}
